@@ -156,13 +156,10 @@ function update() {
 
 const topDensity = sorted.map(([l, c]) => {
     const percent = ((c / total) * 100).toFixed(2);
-    return `<div>${l} (${c}) (${percent}) <div class='bar' style='width:${percent}%'></div></div>`;
+    return `<div>${l} (${c}) (${percent})% <div class='bar' style='width:${percent}%'></div></div>`;
 }).join("");
 
-//   const allDensity = sorted.map(([l, c]) => {
-//     const percent = ((c / total) * 100).toFixed(2);
-//     return `<div>${l} (${c}) <div class='bar' style='width:${percent}%'></div></div>`;
-//   }).join("");
+
 
   density.innerHTML = topDensity;
 }
