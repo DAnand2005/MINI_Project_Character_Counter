@@ -16,7 +16,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-color: var(--bg);
-    color: var(--text);
+    background-image: url("keyboard.webp");        
     display: flex;
     justify-content: center;
     padding: 6rem;  
